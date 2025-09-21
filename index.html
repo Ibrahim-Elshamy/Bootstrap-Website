@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Ibrahim Elshamy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Italianno&family=Merienda:wght@300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.css">
+
+</head>
+<body>
+    <!-- Navbar Section -->
+    <nav class="navbar navbar-expand-lg position-fixed top-0 w-100">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="images/leaf.png" alt="leaf-logo" class="d-inline-block align-text-center" width="50" height="50">
+                <span class="logo">Leaf</span>
+            </a>
+            <div class="vr border border-dark border-1"></div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active focus-ring rounded-3 ms-2 focus-ring-success"
+                            aria-current="page"
+                            href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link focus-ring rounded-3 focus-ring-success"
+                            href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle focus-ring rounded-3 focus-ring-success"
+                            href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Item</a></li>
+                            <li><a class="dropdown-item" href="#">Stores Location</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Social Media</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active focus-ring rounded-3 focus-ring-success"                            
+                        aria-current="page" href="#">Contact Us</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2 shadow-none" type="search" placeholder="Search" aria-label="Search" />
+                    <button class="btn btn-outline-success fw-medium px-3" type="submit">Search</button>
+                </form>
+                <button type="button" class="btn btn-secondary text-light ms-2 btn-outline-success mt-2 mt-md-0 border-0 px-3 py-2 fw-medium" data-bs-toggle="modal" data-bs-target="#firstModal">
+                    Order
+                </button>
+                <div class="modal fade" id="firstModal" tabindex="-1" aria-labelledby="firstModalLabel"
+                    aria-hidden="true" data-bs-backdrop="false">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="firstModalLabel">Order</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="customerName" class="form-label">Name</label>
+                                        <input type="text" class="form-control" id="customerName" placeholder="Enter your name" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                                            placeholder="name@example.com">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="customerPhone" class="form-label">Phone Number</label>
+                                        <input type="tel" class="form-control" id="customerPhone" placeholder="+20 123 456 7890" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="customerOrder" class="form-label">Your Order</label>
+                                        <textarea class="form-control" id="customerOrder" placeholder="Enter Your Order"
+                                            required></textarea>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="deliveryAddress" class="form-label">Delivery Address</label>
+                                        <textarea class="form-control" id="deliveryAddress" placeholder="Enter delivery address"
+                                            required></textarea>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="deliveryDate" class="form-label">Delivery Date</label>
+                                        <input type="date" class="form-control" id="deliveryDate" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="paymentMethod" class="form-label">Payment Method</label><br>
+                                        <input class="form-check-input" type="checkbox" value="" id="checkChecked">
+                                        <label class="form-check-label" for="checkChecked">Cash</label>
+                                        <input class="form-check-input" type="checkbox" value="" id="checkChecked">
+                                        <label class="form-check-label" for="checkChecked">Credit Card</label>
+                                    </div>
+                                    <div class="d-grid gap-2 col-9 mb-3 mx-auto">
+                                        <button class="btn btn-success" type="submit">Place Order</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- First Section -->
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators mb-3">
+            <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0" class="active text-secondary"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+                <div class="carousel-item active vh-100 ">
+                <img src="images/bg-2.jpeg" class="d-block w-100 h-100" alt="...">
+                <div class="carousel-caption d-block bg-dark-50 py-5 mb-4 border-bottom border-end rounded">
+                    <h4>Welcome To <span class="logo">Leaf</span></h4>
+                    <p>Discover bouquets designed to brighten your day</p>
+                    <button class="btn btn-success px-4">Shop Now</button>
+                </div>
+                
+            </div>
+            <div class="carousel-item vh-100">
+                <img src="images/bg-4.jpeg" class="d-block w-100 h-100" alt="...">
+                <div class="carousel-caption d-block bg-dark-50 py-5 mb-4 border-bottom border-end rounded">
+                    <h4>Special Offers</h4>
+                    <p>Enjoy seasonal discounts on our best-selling flowers.</p>
+                    <button class="btn btn-success px-4">See Offers</button>
+                </div>
+            </div>
+            <div class="carousel-item vh-100">
+                <img src="images/bg-3.jpeg" class="d-block w-100 h-100" alt="...">
+                <div class="carousel-caption d-block bg-dark-50 py-5 mb-4 border-bottom border-end rounded">
+                    <h4>Celebrate Every Moment</h4>
+                    <p>From birthdays to weddings, make every occasion unforgettable.</p>
+                    <button class="btn btn-success px-4">Order Now</button>
+                </div>
+            </div>
+            <div class="carousel-item vh-100">
+                <img src="images/bg-1.jpeg" class="d-block w-100 h-100" alt="...">
+                <div class="carousel-caption d-block bg-dark-50 py-5 mb-4 border-bottom border-end rounded">
+                    <h4>More Than Flowers</h4>
+                    <p>We deliver emotions wrapped in petals and colors.</p>
+                    <button class="btn btn-success px-4">Learn More</button>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- Second Section -->
+    <div class="bg-light-100 p-4">
+        <h5 class="fs-1 text-success textFont">Welcome</h5>
+        <p class="text-secondary fs-5">Welcome To <span class="logo"> Leaf</span> &nbsp; – Where Flowers Meet Elegance.</p>
+        <button class="btn btn-outline-success">Discover Our Collection</button>
+    </div>
+    <!-- icons list -->
+    <ul class="list-group position-fixed top-50 end-0 translate-middle-y me-3 z-3">
+        <li class="list-group-item mb-3 bg-transparent rounded p-0 w-100"><a
+                href="https://www.facebook.com" class="btn btn-outline-success border-0 w-100 opacity-100"><i
+                    class="fab fa-facebook-f text-light fs-2 opacity-100"></i></a></li>
+        <li class="list-group-item mb-3 bg-transparent rounded p-0 w-100"><a href="https://www.instagram.com"
+                class="btn btn-outline-success border-0 border-top w-100 "><i class="fab fa-instagram text-light fs-2"></i></a></li>
+        <li class="list-group-item mb-3 bg-transparent rounded p-0 w-100"><a href="https://www.twitter.com"
+                class="btn btn-outline-success border-0 border-top w-100"><i class="fab fa-twitter text-light fs-2"></i></a></li>
+        <li class="list-group-item mb-3 bg-transparent rounded p-0 w-100"><a href="https://www.youtube.com"
+                class="btn btn-outline-success border-0 border-top w-100"><i class="fab fa-youtube text-light fs-2"></i></a></li>
+        <li class="list-group-item mb-3 bg-transparent rounded p-0 w-100"><a href="https://www.whatsapp.com"
+                class="btn btn-outline-success border-0 border-top w-100"><i class="fab fa-whatsapp text-light fs-2"></i></a></li>
+    </ul>
+    <!-- Third Section -->
+    <div class="text-center fw-bold text-light bg-success-100 text-capitalize p-5 textFont"><span class="fs-2">Why</span> <span class="logo"> Leaf</span></div>
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed bg-light-100 shadow-none fw-medium" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    About Our Flowers
+                </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    <p>Freshness Guaranteed</p>
+                    <p>Unique Designs</p>
+                    <p>Quality First</p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed bg-light-100 shadow-none border fw-medium" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    Our Services
+                </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    <p>Bouquets for Every Occasion (Wedding, Engagement, Birthdays)</p>
+                    <p> Custom Arrangements</p>
+                    <p>Delivery Service</p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed bg-light-100 shadow-none border fw-medium" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    The Secret Behind Our Flowers
+                </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    <p>Handpicked Flowers</p>
+                    <p>Affordable Luxury</p>
+                    <p>Customer Happiness</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fourth Section -->
+    <div class="text-center fs-1 fw-bold text-light bg-success-100 text-capitalize p-5 textFont">Arabic to English Translator</div>
+    <div class="p-4 text-capitalize ">  
+        <h5 class="fs-4 mb-3">Just write, then <span class='text-success'>Press Here</span> for magic</h5> 
+        <div class="d-inline-block">
+            <button type="button" id="toastbtn" class="btn btn-outline-success px-4 copyBtn fw-medium" data-bs-toggle="modal"
+                data-bs-target="#secondModal">
+                Copy
+            </button>
+            <span class="copySpan bg-success py-1 px-3 rounded-5 fw-medium d-none"><small>Copied!</small></span>
+        </div>
+        
+        <div class="modal fade" id="secondModal" tabindex="-1" aria-labelledby="secondModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="secondModalLabel">Text Ready to Use</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h2 class="fs-6">The Message Copied</h2>
+                    </div>
+                    <button type="button" class="btn btn-secondary w-25 ms-auto me-3 mb-3" data-bs-dismiss="modal">Ok</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-floating mt-4 ">
+            <textarea class="form-control h-100 ps-5 pt-5 shadow-none" id="comment" name="text" rows="4"></textarea>
+            <label for="comment" class="ms-5 fs-4 fw-medium pt-3">Write your Arabic text here:</label>
+        </div>
+    </div>
+    <div class="text-center fs-1 fw-bold text-light bg-success-100 text-capitalize p-5 textFont">Arabic to French Translator</div>
+    <div class="p-4 text-capitalize">
+        <h5 class="fs-4 mb-3">Just write, then <span class='text-success'>Press Here</span> for magic</h5>
+        <div class="d-inline-block">
+        <button type="button" id="toastbtn" class="btn btn-outline-success px-4 copyBtn fw-medium" data-bs-toggle="modal"
+            data-bs-target="#secondModal">
+            Copy
+        </button>
+        <span class="copySpan bg-success py-1 px-3 rounded-5 fw-medium d-none"><small>Copied!</small></span>
+        </div>
+    
+        <div class="modal fade" id="secondModal" tabindex="-1" aria-labelledby="secondModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="secondModalLabel">Text Ready to Use</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h2 class="fs-6">The Message Copied</h2>
+                    </div>
+                    <button type="button" class="btn btn-secondary w-25 ms-auto me-3 mb-3"
+                        data-bs-dismiss="modal">Ok</button>
+                </div>
+            </div>
+        </div>
+    
+        <div class="form-floating mt-4 ">
+            <textarea class="form-control h-100 ps-5 pt-5 shadow-none" id="comment" name="text" rows="4"></textarea>
+            <label for="comment" class="ms-5 fs-4 fw-medium pt-3">Write your Arabic text here:</label>
+        </div>
+    </div>
+    <div class="text-center fs-1 fw-bold text-light bg-success-100 text-capitalize p-5 textFont">Arabic To German Translator</div>
+    <div class="p-4 text-capitalize">
+        <h5 class="fs-4 mb-3">Just write, then <span class='text-success'>Press Here</span> for magic</h5>
+        <div class="d-inline-block">
+            <button type="button" id="toastbtn" class="btn btn-outline-success px-4 copyBtn fw-medium" data-bs-toggle="modal"
+                data-bs-target="#secondModal">
+                Copy
+            </button>
+            <span class="copySpan bg-success py-1 px-3 rounded-5 fw-medium d-none"><small>Copied!</small></span>
+        </div>
+    
+        <div class="modal fade" id="secondModal" tabindex="-1" aria-labelledby="secondModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="secondModalLabel">Text Ready to Use</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h2 class="fs-6">The Message Copied</h2>
+                    </div>
+                    <button type="button" class="btn btn-secondary w-25 ms-auto me-3 mb-3"
+                        data-bs-dismiss="modal">Ok</button>
+                </div>
+            </div>
+        </div>
+    
+        <div class="form-floating mt-4 ">
+            <textarea class="form-control h-100 ps-5 pt-5 shadow-none" id="comment" name="text" rows="4"></textarea>
+            <label for="comment" class="ms-5 fs-4 fw-medium pt-3">Write your Arabic text here:</label>
+        </div>
+    </div>
+    <!-- Fifth Section -->
+    <div class="background1"></div>
+    <!-- Sixth Section -->
+    <div class="text-center fs-1 fw-bold text-light bg-success-100 text-capitalize p-5 textFont">Our Special Touch</div>
+    <div class="container my-5 itemsPic">
+        <div class="row">
+            <div class="col-12 col-md-4">
+                <div class="card w-100 p-2 mb-5 position-relative card1 shadow">
+                    <img src="images/sec6-item2.jpeg" class="card-img-top img-fluid rounded" alt="...">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title text-success text-uppercase">Passion in Red</h5>
+                        <a href="#" class="btn btn-success align-self-end mb-4 me-3 px-4">Order Now</a>
+                        <p class="card-text">A bouquet of red roses symbolizing love and passion</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="card w-100 p-2 mb-5 position-relative card1 shadow">
+                    <img src="images/sec6-item5.jpeg" class="card-img-top rounded img-fluid" alt="...">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title text-success text-uppercase">Elegance in Simplicity</h5>
+                        <a href="#" class="btn btn-success align-self-end mb-4 me-3 px-4">Order Now</a>
+                        <p class="card-text">A single flower with a unique and elegant design bouquet</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="card w-100 p-2 mb-5 position-relative card1 shadow">
+                    <img src="images/sec6-item6.jpeg" class="card-img-top rounded img-fluid" alt="...">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title text-success text-uppercase">Blooming Basket</h5>
+                        <a href="#" class="btn btn-success align-self-end mb-4 me-3 px-4">Order Now</a>
+                        <p class="card-text">A basket full of fresh flowers bringing joy and beauty.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-4">
+                <div class="card w-100 p-2 mb-5 position-relative card1 shadow">
+                    <img src="images/sec6-item4.jpeg" class="card-img-top rounded" alt="...">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title text-success text-uppercase">Luxury in a Box</h5>
+                        <a href="#" class="btn btn-success align-self-end mb-4 me-3 px-4">Order Now</a>
+                        <p class="card-text">An elegant flower box, perfect for a special gift</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="card w-100 p-2 mb-5 position-relative card1 shadow">
+                    <img src="images/sec6-item8.jpeg" class="card-img-top rounded" alt="...">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title text-success text-uppercase">the Pure Bloom</h5>
+                        <a href="#" class="btn btn-success align-self-end mb-4 me-3 px-4">Order Now</a>
+                        <p class="card-text">A single natural flower that speaks with simplicity.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="card w-100 p-2 mb-5 position-relative card1 shadow">
+                    <img src="images/sec6-item9.jpeg" class="card-img-top rounded" alt="...">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title text-success text-uppercase">Purity of white</h5>
+                        <a href="#" class="btn btn-success align-self-end mb-4 me-3 px-4">Order Now</a>
+                        <p class="card-text">A white bouquet that reflects peace and purity</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-evenly">
+            <div class="col-12 col-md-4 col-6">
+                <div class="card w-100 p-2 mb-5 position-relative card1 shadow">
+                    <img src="images/sec1-item40.jpeg" class="card-img-top rounded" alt="...">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title text-success text-uppercase">Bag of Beauty</h5>
+                        <a href="#" class="btn btn-success align-self-end mb-4 me-3 px-4">Order Now</a>
+                        <p class="card-text">Stylish flowers presented in a modern carry bag</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 col-6">
+                <div class="card w-100 p-2 mb-5 position-relative card1 shadow">
+                    <img src="images/sec6-item3.jpeg" class="card-img-top rounded" alt="...">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title text-success text-uppercase">Harmony of Colors</h5>
+                        <a href="#" class="btn btn-success align-self-end mb-4 me-3 px-4">Order Now</a>
+                        <p class="card-text">A colorful bouquet that radiates joy and happiness</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Seventh Section -->
+    <div class="background2"></div>
+    <!-- Eighth Section -->
+    <div class="text-center fs-1 fw-bold text-light bg-success-100 text-capitalize p-5 textFont">Customer Favorites</div>
+    <div class="container my-5">
+        <div class="row justify-content-around">
+            <div class="col-12 col-md-4 mb-4">
+                <div class="card text-bg-dark h-100 rounded-4 profile-card">
+                    <img src="images/sec6-item1.jpeg" class="card-img rounded-4 h-100" alt="...">
+                    <div class="overlay rounded-4"></div>
+                    <div class="card-img-overlay d-flex flex-column">
+                        <p class="card-title">With All Love and Appreciation</p>
+                        <p class="text-white">
+                            <i class="far fa-clock"></i> June 22, 2025
+                        </p>
+                        <div class="profile-info position-absolute bottom-0 start-0 text-white ms-4">
+                            <img src="images/redFlower.jpeg" class="rounded-pill mb-2 border" width="90px" height="130px" alt="">
+                            <h6 class="mb-1">Love in Bloom</h6>
+                            <p>Heart Bouquet - Blending Elegance and Romance</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-12 col-md-4 mb-4">
+                <div class="card text-bg-dark h-100 rounded-4 profile-card">
+                    <img src="images/sec6-item7.jpeg" class="card-img rounded-4 h-100" alt="...">
+                    <div class="overlay rounded-4"></div>
+                    <div class="card-img-overlay d-flex flex-column">
+                        <p class="card-title">With All Love and Appreciation</p>
+                        <p class="text-white">
+                            <i class="far fa-clock"></i> June 22, 2025
+                        </p>
+                        <div class="profile-info position-absolute bottom-0 start-0 text-white ms-4">
+                            <img src="images/Sunflower.jpeg" class="rounded-pill mb-2 border" width="90px" height="130px" alt="">
+                            <h6 class="mb-1">A Touch Of Sunshine</h6>
+                            <p>Elegant Bouquet With One Sunflower</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-4 mb-4">
+                <div class="card text-bg-dark h-100 rounded-4 profile-card">
+                    <img src="images/sec6-item11.jpeg" class="card-img rounded-4 h-100" alt="...">
+                    <div class="overlay rounded-4"></div>
+                    <div class="card-img-overlay d-flex flex-column">
+                        <p class="card-title">With All Love and Appreciation</p>
+                        <p class="text-white">
+                            <i class="far fa-clock"></i> June 22, 2025
+                        </p>
+                        <div class="profile-info position-absolute bottom-0 start-0 text-white ms-4">
+                            <img src="images/ferrero-rocher1.jpeg" class="rounded-pill mb-2 border" width="90px" height="130px" alt="">
+                            <h6 class="mb-1">FERRERO ROCHER</h6>
+                            <p>The Perfect Mix – Half Floral, Half Chocolate</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ninth Section --> 
+    <div class="text-center fs-1 fw-bold text-success text-capitalize p-5 fst-italic textFont">Explore Our Branches</div>
+    <div class="container">
+
+        <div class="card mb-3">
+            <div class="row g-0">
+                <div class="col-md-4 px-3 order-1 order-md-2 cardImg">
+                    <img src="images/shop1.jpeg" class="img-fluid rightClipped-img rounded-1 rounded-md-end-1" alt="...">
+                </div>
+                <div class="col-md-8 d-flex order-2 order-md-1">
+                    <div class="card-body pe-5 d-flex flex-column h-100">
+                        <h5 class="card-title text-success">Secret Bouquet</h5>
+                        <p class="text-muted mb-2">6th of October &nbsp;<i class="fas fa-map-marker-alt text-success"></i></p>
+                        <div class="w-50 pe-5">
+                            <hr class="border-3 w-25 text-success">
+                        </div>
+                        <p class="card-text">
+                            <small class="text-body-secondary">
+                                The Secret Bouquet is more than just flowers — it’s a message of love hidden in every petal. Wrapped with elegance and
+                                care, it speaks the words that are hard to say. A perfect way to make someone’s heart blossom with happiness.
+                            </small>
+                        </p>
+                        <div class="d-flex gap-2 mt-auto">
+                            <button class="btn btn-outline-success btn-sm">
+                                <i class="fas fa-shopping-cart"></i> &nbsp;Order Now
+                            </button>
+                            <button class="btn btn-outline-success btn-sm">
+                                <i class="fas fa-eye"></i> &nbsp; View Details
+                            </button>
+                            <button class="btn btn-outline-success btn-sm">
+                                <i class="fas fa-map-pin"></i> &nbsp; Find Us
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mb-3">
+            <div class="row g-0">
+                <div class="col-md-4 px-3 cardImg">
+                    <img src="images/shop2.jpeg" class="img-fluid leftClipped-img rounded-1 rounded-md-end-1" alt="...">
+                </div>
+                <div class="col-md-8 d-flex">
+                    <div class="card-body pe-5 d-flex flex-column h-100">
+                        <h5 class="card-title text-success">Petals & Hearts</h5>
+                        <p class="text-muted mb-2">Maadi &nbsp;<i class="fas fa-map-marker-alt text-success"></i></p>
+                        <div class="w-50 pe-5">
+                            <hr class="border-3 w-25 text-success">
+                        </div>
+                        <p class="card-text">
+                            <small class="text-body-secondary">
+                                Looking for the perfect gift? This bouquet is carefully designed to surprise and delight. With its vibrant colors and
+                                fresh fragrance, it’s the ideal choice for birthdays, anniversaries, or just to say ‘I care’. Give a gift that will
+                                always be remembered.
+                            </small>
+                        </p>
+                        <div class="d-flex gap-2 mt-auto">
+                            <button class="btn btn-outline-success btn-sm">
+                                <i class="fas fa-shopping-cart"></i> &nbsp;Order Now
+                            </button>
+                            <button class="btn btn-outline-success btn-sm">
+                                <i class="fas fa-eye"></i> &nbsp; View Details
+                            </button>
+                            <button class="btn btn-outline-success btn-sm">
+                                <i class="fas fa-map-pin"></i> &nbsp; Find Us
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mb-3">
+            <div class="row g-0">
+                <div class="col-md-4 px-3 order-1 order-md-2 cardImg">
+                    <img src="images/shop3.jpeg" class="img-fluid rightClipped-img rounded-1 rounded-md-end-1" alt="...">
+                </div>
+                <div class="col-md-8 d-flex order-2 order-md-1">
+                    <div class="card-body pe-5 d-flex flex-column h-100">
+                        <h5 class="card-title text-success">La Vie en Rose</h5>
+                        <p class="text-muted mb-2">Tahrir Square &nbsp;<i class="fas fa-map-marker-alt text-success"></i></p>
+                        <div class="w-50 pe-5">
+                            <hr class="border-3 w-25 text-success">
+                        </div>
+                        <p class="card-text">
+                            <small class="text-body-secondary">
+                                For those special moments that deserve elegance, this bouquet is the answer. Designed with sophistication, it combines
+                                delicate flowers in perfect balance. A timeless gift that leaves a lasting impression, full of grace and charm.
+                            </small>
+                        </p>
+                        <div class="d-flex gap-2 mt-auto">
+                            <button class="btn btn-outline-success btn-sm">
+                                <i class="fas fa-shopping-cart"></i> &nbsp;Order Now
+                            </button>
+                            <button class="btn btn-outline-success btn-sm">
+                                <i class="fas fa-eye"></i> &nbsp; View Details
+                            </button>
+                            <button class="btn btn-outline-success btn-sm">
+                                <i class="fas fa-map-pin"></i> &nbsp; Find Us
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card mb-3">
+            <div class="row g-0">
+                <div class="col-md-4 px-3 cardImg">
+                    <img src="images/shop4.jpeg" class="img-fluid leftClipped-img rounded-1 rounded-md-end-1" alt="...">
+                </div>
+                <div class="col-md-8 d-flex">
+                    <div class="card-body pe-5 d-flex flex-column h-100">
+                        <h5 class="card-title text-success">Flora Elegance</h5>
+                        <p class="text-muted mb-2">Nasr City &nbsp;<i class="fas fa-map-marker-alt text-success"></i></p>
+                        <div class="w-50 pe-5">
+                            <hr class="border-3 w-25 text-success">
+                        </div>
+                        <p class="card-text">
+                            <small class="text-body-secondary">
+                                Bring a touch of nature into someone’s day with this handpicked bouquet. Each flower is chosen for its freshness and
+                                beauty, creating a natural harmony of colors. It’s not just flowers — it’s a piece of the garden, delivered with love.
+                            </small>
+                        </p>
+                        <div class="d-flex gap-2 mt-auto">
+                            <button class="btn btn-outline-success btn-sm">
+                                <i class="fas fa-shopping-cart"></i> &nbsp;Order Now
+                            </button>
+                            <button class="btn btn-outline-success btn-sm">
+                                <i class="fas fa-eye"></i> &nbsp; View Details
+                            </button>
+                            <button class="btn btn-outline-success btn-sm">
+                                <i class="fas fa-map-pin"></i> &nbsp; Find Us
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- tenth Section -->
+    <div class="container py-5">
+        <div class="row justify-content-evenly text-center py-5">
+            <div class="col-7 col-md-2 mt-5 ">
+                <div class="card border-2 border-success h-100">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold">Chat With Us</h5>
+                        <p><small>Quick Support & Orders</small></p>
+                        <img src="images/WhatsApp_icon.png" alt="whatsapp" class="d-block w-50 mx-auto my-4 icon-img">
+                        <a class="icon-link icon-link-hover fw-medium mt-auto mx-auto text-success" href="#">
+                            Go There
+                            <svg xmlns="http://www.w3.org/2000/svg" class="bi" viewBox="0 0 16 16" aria-hidden="true">
+                                <path d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-7 col-md-2 mt-5">
+                <div class="card border-2 border-success h-100">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold">Follow Us</h5>
+                        <p><small>New Collections</small></p>
+                        <img src="images/Instagram-Icon.png" alt="instagram" class="d-block w-50 mx-auto my-4 icon-img">
+                        <a class="icon-link icon-link-hover fw-medium mt-auto mx-auto text-success" href="#">
+                            Go There
+                            <svg xmlns="http://www.w3.org/2000/svg" class="bi" viewBox="0 0 16 16" aria-hidden="true">
+                                <path d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-7 col-md-2 mt-5">
+                <div class="card border-2 border-success h-100">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold">Connect On</h5>
+                        <p><small>Business Updates</small></p>
+                        <img src="images/facebook.png" alt="facebook" class="d-block w-50  mx-auto my-4 icon-img rounded">
+                        <a class="icon-link icon-link-hover fw-medium mt-auto mx-auto text-success" href="#">
+                            Go There
+                            <svg xmlns="http://www.w3.org/2000/svg" class="bi" viewBox="0 0 16 16" aria-hidden="true">
+                                <path d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-7 col-md-2 mt-5">
+                <div class="card border-2 border-success h-100">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold">Stay Updated</h5>
+                        <p><small>Latest News & Tips</small></p>
+                        <img src="images/Twitter-icon.png" alt="twitter" class="d-block w-50 mx-auto my-4 icon-img">
+                        <a class="icon-link icon-link-hover fw-medium mt-auto mx-auto text-success" href="#">
+                            Go There
+                            <svg xmlns="http://www.w3.org/2000/svg" class="bi" viewBox="0 0 16 16" aria-hidden="true">
+                                <path d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer Section -->
+    <footer class="mt-5">
+        <div class="card text-center">
+            <div class="card-header"><br></div>
+            <div class="card-body">
+                <div class="container ps-md-5">
+                    <div class="row ms-md-5">
+                        <div class="col-12 col-md-4 mb-4">
+                            <div class="d-flex flex-column flex-md-row align-items-center my-3">
+                                <img src="images/leaf.png" class="rounded-circle mb-3 mb-md-0 me-md-3" style="width: 100px;"
+                                    alt="">
+                                <h5 class="logo">leaf</h5>
+                            </div>
+                            <div class="mt-3 mt-md-4 text-center text-md-start ps-md-2 pe-5">
+                                <p><small>We create elegant flower designs to spread joy, beauty, and love for every occasion.</small></p>
+                            </div>
+                        </div>
+
+                        <hr class="d-block d-md-none border-3">
+
+                        <div class="col-12 col-md-4 mb-4">
+                            <div class="d-flex flex-column flex-md-row align-items-center my-3">
+                                <img src="images/leaf.png" class="rounded-circle mb-3 mb-md-0 me-md-3" style="width: 100px;"
+                                    alt="">
+                                <h5 class="logo">Quick Links</h5>
+                            </div>
+                            <div class="mt-3 mt-md-4 text-center text-md-start ps-md-2">
+                                <p><a href="#" class="text-dark text-decoration-none">Home</a></p>
+                                <p><a href="#" class="text-dark text-decoration-none">What We Offer</a></p>
+                                <p><a href="#" class="text-dark text-decoration-none">Contact</a></p>
+                            </div>
+                        </div>
+
+                        <hr class="d-block d-md-none border-3">
+
+                        <div class="col-12 col-md-4 mb-4">
+                            <div class="d-flex flex-column flex-md-row align-items-center my-3">
+                                <img src="images/leaf.png" class="rounded-circle mb-3 mb-md-0 me-md-3" style="width: 100px;"
+                                    alt="">
+                                <h5 class="logo">Contact</h5>
+                            </div>
+                            <div class="mt-3 mt-md-4 text-center text-md-start ps-md-2">
+                                <p>Tel: 01123511911</p>
+                                <p>Email: i.elshamy01@gmail.com</p>
+                                <p>Address: Egypt</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+
+                
+            </div>
+            <div class="card-footer text-body-secondary">
+                <p> &copy; 2025 All rights reserved | Made with
+                    <span><i class="fas fa-heart text-success"></i></span> by
+                    <a href="" class="text-decoration-none text-success">Ibrahim Elshamy</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- <script src="JS/bootstrap.min.js"></script> -->
+    <script src="JS/bootstrap.bundle.js"></script>
+</body>
+</html>
